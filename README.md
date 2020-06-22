@@ -32,6 +32,8 @@ Ni también maneja un clipboard, como una variable global a la que se puede acce
 
 # Como ejecutar
 
+Descarga Ni aquí: https://github.com/DeybisMelendez/ni/releases
+
 ## Windows
 
 Coloca el ejecutable al lado del script con formato **.ni**
