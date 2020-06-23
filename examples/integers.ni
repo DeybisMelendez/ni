@@ -1,2 +1,2 @@
-/ Imprime números enteros en un bucle infinito
+/ Imprime primeros 100 números enteros positivos
 #0a>+#64{>.+<<!>}
