@@ -1,5 +1,5 @@
 # ¿Qué es Ni?
-Ni es un lenguaje de programación esotérico escrito en Lua influenciado por Brainfuck. El nombre Ni viene de Nicaragua. No es un lenguaje de programación que deba tomarse en serio, si no mas bien, como un juguete.
+Ni es un lenguaje de programación esotérico escrito en Lua influenciado por Brainfuck. El nombre Ni viene de Nicaragua.
 
 # ¿Cómo funciona?
 
