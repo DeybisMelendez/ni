@@ -64,3 +64,18 @@ Este código imprime devuelta el byte que escribas
 #01[@!#0a!]
 
 Hay mas ejemplos en la carpeta *examples*.
+
+# Próximamente
+
+Estoy creando ejemplos de programas escritos en Ni, puedes enviar pull requests si escribes uno o enviarlo como un issue para añadirlo.
+
+Hay una serie de problemas populares para resolver y mostrar la capacidad de un lenguaje de programación esotérico, la lista está aquí: https://esolangs.org/wiki/Popular_problem
+
+Los problemas a resolver que me interesan mas son:
+
+- Programa que calcule el factorial de un número.
+- Programa que devuelva la sucesión de Thue-Morse o cualquier otra sucesión conocida.
+- Programa que imprima el triangulo de Sierpinski.
+- Programa que haga Quine.
+
+También pienso añadir un sistema de error de sintaxis.
