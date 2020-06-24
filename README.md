@@ -21,7 +21,7 @@ Ni también maneja un clipboard, como una variable global a la que se puede acce
 |<          |Mueve el cabezal a la izquierda|
 |+          |Suma 1 al número de la celda apuntada|
 |-          |Resta 1 al número de la celda apuntada|
-|@          |Lee un byte, lo convierte a número y lo almacena en la celda apuntada|
+|@          |Lee el primer caracter, lo convierte a su número ASCII y lo almacena en la celda apuntada|
 |.          |Imprime en pantalla el número almacenado en la celda apuntada|
 |!          |Imprime en pantalla el equivalente ASCII del número almacenado en la celda apuntada|
 |#          |Establece un valor hexadecimal de dos dígitos en la celda apuntada|
