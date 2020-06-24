@@ -83,3 +83,7 @@ Los problemas a resolver que me interesan mas son:
 - Programa que haga Quine.
 
 También pienso añadir un sistema de error de sintaxis.
+
+## Discord
+
+He creado un servidor en Discord, participa en el chat con este enlace: https://discord.gg/dxYxZs5
