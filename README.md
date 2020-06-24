@@ -1,7 +1,11 @@
-# ¿Qué es Ni?
+# Ni
+
+<img src="https://raw.githubusercontent.com/DeybisMelendez/ni/master/logo.jpg" width="300"/>
+
+## ¿Qué es Ni?
 Ni es un lenguaje de programación esotérico escrito en Lua influenciado por Brainfuck. El nombre Ni viene de Nicaragua.
 
-# ¿Cómo funciona?
+## ¿Cómo funciona?
 
 Ni opera con un arreglo de números enteros, en referencia a la cinta de la máquina de Turing al igual que brainfuck, contiene un total de 65,536 celdas que se inicializan en cero. Cada celda contiene un número entero de 64 bits.
 
@@ -9,7 +13,7 @@ Ni tiene un cabezal que apunta a la memoria de una celda del array que puedes ma
 
 Ni también maneja un clipboard, como una variable global a la que se puede acceder y modificar en cualquier momento.
 
-# Instrucciones
+## Instrucciones
 
 |Instrucción|Descripción |
 |-----------|------------|
@@ -30,34 +34,34 @@ Ni también maneja un clipboard, como una variable global a la que se puede acce
 |()         |(if) Ejecuta el conjunto de instrucciones si el número apuntado no es igual a 0|
 |/          |Ignora el resto de la línea|
 
-# Como ejecutar
+## Como ejecutar
 
 Descarga Ni aquí: https://github.com/DeybisMelendez/ni/releases
 
-## Windows
+### Windows
 
 Coloca el ejecutable al lado del script con formato **.ni**
 Abre el CMD y ejecuta **ni tucodigo.ni**
 
-## Linux
+### Linux
 
 Coloca el ejecutable al lado del script con formato **.ni**
 Abre la terminal y ejecuta **./ni tucodigo.ni**
 
-## Con Lua 5.2
+### Con Lua 5.2
 
 Coloca el main.lua junto al script con formato **.ni**
 Abre la terminal o CMD y ejecuta **lua main.lua tucodigo.ni**
 
-# Ejemplos
+## Ejemplos
 
-## Hola Mundo!
+### Hola Mundo!
 
 Este código imprime el hola mundo.
 
 #48!#6f!#6c!#61!#20!#4d!#75!#6e!#64!#6f!#21!#0a!
 
-## Cat
+### Cat
 
 Este código imprime devuelta el byte que escribas
 
@@ -65,7 +69,7 @@ Este código imprime devuelta el byte que escribas
 
 Hay mas ejemplos en la carpeta *examples*.
 
-# Próximamente
+## Próximamente
 
 Estoy creando ejemplos de programas escritos en Ni, puedes enviar pull requests si escribes uno o enviarlo como un issue para añadirlo.
 
