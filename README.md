@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/DeybisMelendez/ni/master/logo.jpg" width="300"/>
 
+English description in: https://esolangs.org/wiki/Ni
+
 ## ¿Qué es Ni?
 Ni es un lenguaje de programación esotérico escrito en Lua influenciado por Brainfuck. El nombre Ni viene de Nicaragua.
 
