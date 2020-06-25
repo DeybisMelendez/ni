@@ -77,7 +77,7 @@ Hay una serie de problemas populares para resolver y mostrar la capacidad de un 
 
 Los problemas a resolver que me interesan mas son:
 
-- Programa que calcule el factorial de un número.
+- Programa que calcule el factorial de un número. (agregado por usuario de Discord Jjony#5227)
 - Programa que devuelva la sucesión de Thue-Morse o cualquier otra sucesión conocida.
 - Programa que imprima el triangulo de Sierpinski.
 - Programa que haga Quine.
