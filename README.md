@@ -71,20 +71,29 @@ Este código imprime devuelta el byte que escribas
 
 Hay mas ejemplos en la carpeta *examples*.
 
-## Próximamente
+## Envía ejemplos
 
-Estoy creando ejemplos de programas escritos en Ni, puedes enviar pull requests si escribes uno o enviarlo como un issue para añadirlo.
+El objetivo principal de programar en Ni es la diversión, el desafío de crear un programa que funcione, en la carpeta *examples* se recopilan estos programas.
+
+Puedes enviar pull requests si escribes uno, enviarlo como un issue o en Discord para añadirlo.
 
 Hay una serie de problemas populares para resolver y mostrar la capacidad de un lenguaje de programación esotérico, la lista está aquí: https://esolangs.org/wiki/Popular_problem
 
-Los problemas a resolver que me interesan mas son:
+Los principales problemas a resolver son:
 
-- Programa que calcule el factorial de un número. (agregado por usuario de Discord Jjony#5227)
-- Programa que devuelva la sucesión de Thue-Morse o cualquier otra sucesión conocida.
-- Programa que imprima el triangulo de Sierpinski.
-- Programa que haga Quine.
+- Programa que calcule el factorial de un dígito. (agregado por usuario de Discord Jjony#5227)
+- Programa que imprima la sucesión de [Thue-Morse](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Thue-Morse) o cualquier otra sucesión conocida.
+- Programa que imprima el [Triangulo de Sierpinski](https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_Sierpinski).
+- Programa que haga [Quine](https://es.wikipedia.org/wiki/Quine_(programa)).
 
-También pienso añadir un sistema de error de sintaxis.
+Además, añado estos:
+
+- Programa que ejecute el [Juego de la vida](https://es.wikipedia.org/wiki/Juego_de_la_vida).
+- Programa que ejecute la [Hormiga de Langton](https://es.wikipedia.org/wiki/Hormiga_de_Langton).
+
+## Próximamente
+
+Añadir un sistema de errores comunes.
 
 ## Discord
 
