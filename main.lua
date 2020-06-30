@@ -93,7 +93,7 @@ for char=1, #code do
         elseif val == "@" then luacode = luacode .. " input()"
         elseif val == "[" then luacode = luacode .. " while (c[i] or 0) ~= 0 do"
         elseif val == "{" then luacode = luacode .. " for _=1, (c[i] or 0) do"
-        elseif val == "(" then luacode = luacode .. " if (c[i] or 0) ~= 0 then"
+        elseif val == "(" then luacode = luacode .. " if (c[i] or 0) == clipboard then"
         elseif val == ")" or val == "]" or val == "}" then luacode = luacode .. " end"
         elseif val == "/" then isComment = true
         end
