@@ -83,7 +83,7 @@ end
 
 local isComment = false
 local char = 1
-while char < #code do
+while char <= #code do
     local val = code:sub(char, char)
     if not isComment then
         if val == "$" then
