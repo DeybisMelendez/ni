@@ -1,3 +1,4 @@
+/ works on v0.1.0 only
 / Creditos al usuario de Discord Jjony#5227
 / Devuelve el factorial de 1 dígito
 @ / Ingreso de digito
