@@ -1,35 +1,29 @@
 local filePath = ({...})[1]
 local file = io.open(filePath,"r")
 local code = ""
+local hexchar = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+        "a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"}
 if file then
     code = file:read("*all")
 else
     print("Unable to open "..filePath)
 end
 
+local luacode = [[
+local i, clipboard, c = 0, 0, {}
+
 local function hex2int(str)
     return tonumber(str, 16)
 end
-local luacode = [[
-local M = 65535
-local i, clipboard, c = 0, 0, {}
 
-local function clamp(n, min , max)
-    if n < min then
-        n = max - math.abs(n)
-    elseif n > max then
-        n = min + (max-math.abs(n))
-    end
-    return n
-end
 local function jump(v)
-    i = clamp(v, 0, M)
+    i = hex2int(v)
 end
 local function right()
-    i = clamp(i+1, 0, M)
+    i = i+1
 end
 local function left()
-    i = clamp(i-1, 0, M)
+    i = i-1
 end
 local function add()
     c[i] = (c[i] or 0) + 1
@@ -38,7 +32,7 @@ local function sub()
     c[i] = (c[i] or 0) - 1
 end
 local function set(v)
-    c[i] = v
+    c[i] = hex2int(v)
 end
 local function clear()
     c[i] = 0
@@ -61,16 +55,36 @@ end
 -- The code starts here:
 
 ]]
+
+local function getHex(index)
+    local hex = ""
+    local isHex = true
+    local n = 1
+    while isHex do
+        isHex = false
+        local c = code:sub(index+n, index+n)
+        for i=0, #hexchar do
+            if hexchar[i] == c then
+                isHex = true
+                hex = hex .. c
+            end
+        end
+        n = n + 1
+    end
+    if #hex == 0 then hex = "0" end
+    return hex
+end
+
 local isComment = false
 for char=1, #code do
     local val = code:sub(char, char)
     if not isComment then
-        if val == "$" then luacode = luacode .. " jump(" .. hex2int(code:sub(char+1, char+4)) .. ")"
+        if val == "$" then luacode = luacode .. " jump([[" .. getHex(char) .. "]])"
         elseif val == ">" then luacode = luacode .. " right()"
         elseif val == "<" then luacode = luacode .. " left()"
         elseif val == "+" then luacode = luacode .. " add()"
         elseif val == "-" then luacode = luacode .. " sub()"
-        elseif val == "#" then luacode = luacode .. " set(" .. hex2int(code:sub(char+1, char+2)) .. ")"
+        elseif val == "#" then luacode = luacode .. " set([[" .. getHex(char) .. "]])"
         elseif val == "?" then luacode = luacode .. " copy()"
         elseif val == "=" then luacode = luacode .. " paste()"
         elseif val == "*" then luacode = luacode .. " clear()"
