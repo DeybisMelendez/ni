@@ -2,7 +2,7 @@ local filePath = ({...})[1]
 local file = io.open(filePath,"r")
 local code = ""
 local hexchar = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
-        "a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F"}
+        "a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F", "-"}
 if file then
     code = file:read("*all")
 else
@@ -71,20 +71,33 @@ local function getHex(index)
         end
         n = n + 1
     end
-    if #hex == 0 then hex = "0" end
+    if #hex == 0 then
+        hex = "0"
+    elseif #hex == 1 then
+        if hex == "-" then
+            hex = "0"
+        end
+    end
     return hex
 end
 
 local isComment = false
-for char=1, #code do
+local char = 1
+while char < #code do
     local val = code:sub(char, char)
     if not isComment then
-        if val == "$" then luacode = luacode .. " jump([[" .. getHex(char) .. "]])"
+        if val == "$" then
+            local hex = getHex(char)
+            char = char + #hex
+            luacode = luacode .. " jump([[" .. hex .. "]])"
         elseif val == ">" then luacode = luacode .. " right()"
         elseif val == "<" then luacode = luacode .. " left()"
         elseif val == "+" then luacode = luacode .. " add()"
         elseif val == "-" then luacode = luacode .. " sub()"
-        elseif val == "#" then luacode = luacode .. " set([[" .. getHex(char) .. "]])"
+        elseif val == "#" then
+            local hex = getHex(char)
+            char = char + #hex
+            luacode = luacode .. " set([[" .. hex .. "]])"
         elseif val == "?" then luacode = luacode .. " copy()"
         elseif val == "=" then luacode = luacode .. " paste()"
         elseif val == "*" then luacode = luacode .. " clear()"
@@ -99,6 +112,7 @@ for char=1, #code do
         end
     elseif val == "\n" then isComment = false
     end
+    char = char + 1
 end
 
 local exe = loadstring(luacode)
