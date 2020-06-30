@@ -87,4 +87,4 @@ Also, I add these:
 
 ## Discord
 
-![Discord Banner 3](https://discordapp.com/api/guilds/725401729193214094/widget.png?style=banner3)
+https://discord.gg/dxYxZs5
