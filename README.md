@@ -65,7 +65,7 @@ Then on terminal execute **lua ni.lua yourcode.nic**
 
 ### Lua
 
-CMD or Terminal -> **lua main.lua yourcode.nic**
+CMD or Terminal -> **lua ni.lua yourcode.nic**
 
 ## Examples
 
