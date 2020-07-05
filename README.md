@@ -55,9 +55,11 @@ Lua is required, you can install lua with [brew](https://brew.sh/).
 
 Commands:
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-brew update
-brew install lua`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
+`brew update`
+
+`brew install lua`
 
 Then on terminal execute **lua ni.lua yourcode.nic**
 
