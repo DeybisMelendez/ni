@@ -53,7 +53,9 @@ Lua es requerido, puedes instalar Lua con [brew](https://brew.sh/).
 Comandos:
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"`
+
 `brew update`
+
 `brew install lua`
 
 Entonces puedes ejecutar **lua ni.lua tucodigo.nic**
