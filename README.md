@@ -43,15 +43,27 @@ Download Ni here: https://github.com/DeybisMelendez/ni/releases
 
 ### Windows
 
-CMD ->  **ni yourcode.ni**
+CMD ->  **ni yourcode.nic**
 
 ### Linux
 
-Terminal -> **./ni yourcode.ni**
+Terminal -> **./ni yourcode.nic**
 
-### Lua 5.2
+### Mac
 
-CMD or Terminal -> **lua main.lua yourcode.ni**
+Lua is required, you can install lua with [brew](https://brew.sh/).
+
+Commands:
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew update
+brew install lua`
+
+Then on terminal execute **lua ni.lua yourcode.nic**
+
+### Lua
+
+CMD or Terminal -> **lua main.lua yourcode.nic**
 
 ## Examples
 
@@ -75,15 +87,15 @@ There are a number of popular problems to solve and show the ability of an esote
 
 The main problems to solve are:
 
-- Program that calculates the factorial of a digit. (added by Discord user Jjony # 5227)
-- Program that prints the sequence of [Thue-Morse] (https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Thue-Morse) or any other known sequence.
-- Program that prints the [Sierpinski Triangle] (https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_Sierpinski).
-- Program that [Quine] does (https://es.wikipedia.org/wiki/Quine_ (program)).
+- Program that calculates the factorial of a digit. (added by Discord user Jjony # 5227, fail on >=0.2.1)
+- Program that prints the sequence of [Thue-Morse](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Thue-Morse) or any other known sequence.
+- Program that prints the [Sierpinski Triangle](https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_Sierpinski).
+- Program [Quine] (https://es.wikipedia.org/wiki/Quine_(program)).
 
 Also, I add these:
 
-- Program that executes the [Game of life] (https://es.wikipedia.org/wiki/Juego_de_la_vida).
-- Program that runs the [Langton Ant] (https://es.wikipedia.org/wiki/Hangiga_de_Langton).
+- Program that executes the [Game of life](https://es.wikipedia.org/wiki/Juego_de_la_vida).
+- Program that runs the [Langton Ant](https://es.wikipedia.org/wiki/Hangiga_de_Langton).
 
 ## Discord
 

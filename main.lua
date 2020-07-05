@@ -114,6 +114,10 @@ while char <= #code do
     end
     char = char + 1
 end
-
-local exe = loadstring(luacode)
+local exe
+if loadstring then
+    exe = loadstring(luacode)
+else
+    exe = load(luacode)
+end
 if exe then exe() end

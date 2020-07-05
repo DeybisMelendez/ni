@@ -40,15 +40,27 @@ Descarga Ni aquí: https://github.com/DeybisMelendez/ni/releases
 
 ### Windows
 
-CMD ->  **ni yourcode.ni**
+CMD ->  **ni yourcode.nic**
 
 ### Linux
 
-Terminal -> **./ni tucodigo.ni**
+Terminal -> **./ni tucodigo.nic**
 
-### Lua 5.2
+### Mac
 
-CMD o Terminal -> **lua main.lua tucodigo.ni**
+Lua es requerido, puedes instalar Lua con [brew](https://brew.sh/).
+
+Comandos:
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+brew update
+brew install lua`
+
+Entonces puedes ejecutar **lua ni.lua tucodigo.nic**
+
+### Lua
+
+CMD o Terminal -> **lua main.lua tucodigo.nic**
 
 ## Ejemplos
 
@@ -72,7 +84,7 @@ Hay una serie de problemas populares para resolver y mostrar la capacidad de un 
 
 Los principales problemas a resolver son:
 
-- Programa que calcule el factorial de un dígito. (agregado por usuario de Discord Jjony#5227)
+- Programa que calcule el factorial de un dígito. (agregado por usuario de Discord Jjony#5227, falla en versiones >=0.2.1)
 - Programa que imprima la sucesión de [Thue-Morse](https://es.wikipedia.org/wiki/Sucesi%C3%B3n_de_Thue-Morse) o cualquier otra sucesión conocida.
 - Programa que imprima el [Triangulo de Sierpinski](https://es.wikipedia.org/wiki/Tri%C3%A1ngulo_de_Sierpinski).
 - Programa que haga [Quine](https://es.wikipedia.org/wiki/Quine_(programa)).
@@ -84,4 +96,4 @@ Además, añado estos:
 
 ## Discord
 
-![Discord Banner 3](https://discordapp.com/api/guilds/725401729193214094/widget.png?style=banner3)
+https://discord.gg/dxYxZs5
