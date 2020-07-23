@@ -1,6 +1,6 @@
-# Ni
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3K1P9)
 [![License](http://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
+
+# Ni
 
 <img src="https://raw.githubusercontent.com/DeybisMelendez/ni/master/logo.jpg" width="300"/>
 
@@ -104,3 +104,5 @@ Also, I add these:
 ## Discord
 
 https://discord.gg/dxYxZs5
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B3K1P9)
