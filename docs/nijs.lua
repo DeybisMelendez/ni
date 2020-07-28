@@ -2,7 +2,6 @@ local js = require "js"
 local window = js.global
 local document = window.document
 local execute = document:getElementById("execute")
-local stop = document:getElementById("stop")
 local code =  ""
 local function run()
     code = document:getElementById("textarea").value
@@ -56,7 +55,6 @@ local function run()
         c[i] = clipboard or 0
     end
     -- The code starts here:
-
     ]]
 
     local function getHex(index)

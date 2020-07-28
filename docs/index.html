@@ -6,18 +6,26 @@
         <title>Ni Web Interpreter</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     </head>
-    <body>
-        <h1>Ni online interpreter</h1>
-        <button type="button" class="btn btn-primary" id="execute">Execute</button>
+    <body class="bg-dark">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Ni Web Interpreter</a>
+        </nav>
+        <a href="https://github.com/DeybisMelendez/ni">
+            <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
+        </a>
+        <div class="container-fluid">
+            <button type="button" class="btn btn-primary" id="execute">Run</button>
+            <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'B0B3K1P9');kofiwidget2.draw();</script> 
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
-                    <h2>Code</h2>
-                    <form><textarea class="form-control"  id="textarea"></textarea></form>
+                    <h2 class="text-light">Code</h2>
+                    <form><textarea class="form-control text-light bg-dark" rows="10" id="textarea"></textarea></form>
                 </div>
                 <div class="col">
-                    <h2>Output</h2>
-                    <textarea readonly class="form-control" id="output"></textarea>
+                    <h2 class="text-light">Output</h2>
+                    <textarea readonly class="form-control text-light bg-dark" rows="10" id="output"></textarea>
                 </div>
             </div>
         </div>
